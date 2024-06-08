@@ -1,14 +1,49 @@
-import React from "react";
-import { LiaLuggageCartSolid } from "react-icons/lia";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-router-dom";
+import TrendingItem from "./TrendingItem";
+
+const data = [
+  {
+    id: 1,
+    image: "https://i.imgur.com/EfswbRG.png",
+    title: "beige coat Zara",
+    description: "Cream-Brown-Formal",
+    offer: "new arivals",
+    price: 102,
+  },
+  {
+    id: 2,
+    image: "https://i.imgur.com/Z28Fcbg.png",
+    title: "beige coat Zara",
+    description: "Cream-Brown-Formal",
+    offer: "new arivals",
+    price: 120,
+  },
+  {
+    id: 3,
+    image: "https://i.imgur.com/Z28Fcbg.png",
+    title: "beige coat Zara",
+    description: "Cream-Brown-Formal",
+    offer: "new arivals",
+    price: 100,
+  },
+  {
+    id: 4,
+    image: "https://i.imgur.com/U8sY6WS.png",
+    title: "beige coat Zara",
+    description: "Cream-Brown-Formal",
+    offer: "new arivals",
+    price: 110,
+  },
+];
 
 const Trending = () => {
   return (
-    <div className="trending-container py-5">
+    <div className="trending-container flex flex-col gap-5 lg:pt-10">
       <div className="trending-title w-11/12 mx-auto flex justify-between my-5">
-        <h2 className="text-xl font-semibold p-2">Trending must-haves</h2>
-        <div className=" flex items-center gap-2">
+        <h2 className="text-xl font-semibold p-2 md:text-2xl lg:text-3xl">
+          Trending must-haves
+        </h2>
+        <div className=" flex items-center gap-2 cursor-pointer">
           <p className=" flex items-center gap-2">view all</p>
           <span>
             <MdKeyboardArrowRight />
@@ -16,109 +51,15 @@ const Trending = () => {
         </div>
       </div>
 
-      <div className="trending-items w-11/12 mx-auto grid grid-cols-1 justify-center gap-5 md:grid-cols-2 lg:grid-cols-4">
-        <div className="trending-item shadow-md">
-          <div className="trending-image relative">
-            <img
-              src="https://i.imgur.com/EfswbRG.png"
-              alt="trending image 1"
-              className="w-full"
-            />
-            <div className=" bg-green-600 text-gray-50 py-2 px-4 flex items-center gap-2 w-42 absolute top-3 left-3">
-              <span>
-                <LiaLuggageCartSolid />
-              </span>
-              <p>new arivals</p>
-            </div>
-          </div>
-          <div className="trending-description bg-gray-800 text-gray-50 flex justify-around items-center  py-5">
-            <div>
-              <h2 className="text-xl mb-2">beige coat Zara</h2>
-              <p className=" text-gray-300">Cream-Brown-Formal</p>
-            </div>
-            <Link className=" border p-2 ">
-              <span>$102</span> Shop Now
-            </Link>
-          </div>
-        </div>
-
-        <div className="trending-item shadow-md">
-          <div className="trending-image relative">
-            <img
-              src="https://i.imgur.com/Z28Fcbg.png"
-              alt="trending image 2"
-              className="w-full"
-            />
-            <div className=" bg-green-600 text-gray-50 py-2 px-4 flex items-center gap-2 w-42 absolute top-3 left-3">
-              <span>
-                <LiaLuggageCartSolid />
-              </span>
-              <p>new arivals</p>
-            </div>
-          </div>
-          <div className="trending-description bg-gray-800 text-gray-50 flex justify-around items-center  py-5">
-            <div>
-              <h2 className="text-xl mb-2">beige coat Zara</h2>
-              <p className=" text-gray-300">Cream-Brown-Formal</p>
-            </div>
-            <Link className=" border p-2 ">
-              <span>$102</span> Shop Now
-            </Link>
-          </div>
-        </div>
-
-        <div className="trending-item shadow-md">
-          <div className="trending-image relative">
-            <img
-              src="https://i.imgur.com/Z28Fcbg.png"
-              alt="trending image 2"
-              className="w-full"
-            />
-            <div className=" bg-green-600 text-gray-50 py-2 px-4 flex items-center gap-2 w-42 absolute top-3 left-3">
-              <span>
-                <LiaLuggageCartSolid />
-              </span>
-              <p>new arivals</p>
-            </div>
-          </div>
-          <div className="trending-description bg-gray-800 text-gray-50 flex justify-around items-center  py-5">
-            <div>
-              <h2 className="text-xl mb-2">beige coat Zara</h2>
-              <p className=" text-gray-300">Cream-Brown-Formal</p>
-            </div>
-            <Link className=" border p-2 ">
-              <span>$102</span> Shop Now
-            </Link>
-          </div>
-        </div>
-
-        <div className="trending-item shadow-md">
-          <div className="trending-image relative">
-            <img
-              src="https://i.imgur.com/U8sY6WS.png"
-              alt="trending image 3"
-              className="w-full"
-            />
-            <div className=" bg-green-600 text-gray-50 py-2 px-4 flex items-center gap-2 w-42 absolute top-3 left-3">
-              <span>
-                <LiaLuggageCartSolid />
-              </span>
-              <p>new arivals</p>
-            </div>
-          </div>
-          <div className="trending-description bg-gray-800 text-gray-50 flex justify-around items-center  py-5">
-            <div>
-              <h2 className="text-xl mb-2">beige coat Zara</h2>
-              <p className=" text-gray-300">Cream-Brown-Formal</p>
-            </div>
-            <Link className=" border p-2">
-              <span>$102</span> Shop Now
-            </Link>
-          </div>
-        </div>
+      <div className="trending-items grid grid-cols-1 gap-5 w-11/12 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+        {data.map((product) => (
+          <TrendingItem key={product.id} product={product} />
+        ))}
       </div>
     </div>
   );
 };
 
 export default Trending;
+
+//  w-11/12 mx-auto grid grid-cols-1 justify-center gap-5 md:grid-cols-2 lg:grid-cols-4
