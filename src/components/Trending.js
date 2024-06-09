@@ -51,7 +51,7 @@ const Trending = () => {
         </div>
       </div>
 
-      <div className="trending-items grid grid-cols-1 gap-5 w-11/12 mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+      <div className="trending-items grid grid-cols-1 gap-5 w-11/12 mx-auto md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 ">
         {data.map((product) => (
           <TrendingItem key={product.id} product={product} />
         ))}
@@ -61,5 +61,3 @@ const Trending = () => {
 };
 
 export default Trending;
-
-//  w-11/12 mx-auto grid grid-cols-1 justify-center gap-5 md:grid-cols-2 lg:grid-cols-4

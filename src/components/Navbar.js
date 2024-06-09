@@ -14,8 +14,8 @@ const Navbar = () => {
   return (
     <div className="navbar-container flex flex-col">
       {/* navbar top setion start */}
-      <div className="navbar-top container mx-auto md:flex flex-col lg:flex lg:flex-row lg:items-center lg:gap-28 lg:py-2 ">
-        <div className="navbar-top-nav flex flex-col gap-2 md:flex md:flex-row md:items-center container mx-auto md:pt-2 lg:flex lg:justify-start items-center">
+      <div className="navbar-top w-11/12 mx-auto md:flex flex-col lg:flex lg:flex-row lg:items-center lg:gap-28 lg:py-2 ">
+        <div className="navbar-top-nav flex flex-col gap-2 mb-3 md:flex md:flex-row md:items-center container mx-auto md:pt-2 lg:flex lg:justify-start items-center">
           <div className=" flex justify-between items-center container mx-auto p-2">
             <span className="text-xl md:hidden">
               <IoReorderThreeOutline />
@@ -47,9 +47,9 @@ const Navbar = () => {
           </form>
         </div>
 
-        <div className="navbar-top-navlink md:flex justify-between items-center container mx-auto">
-          <nav className="navbar-top-nav-link hidden md:flex list-none items-center gap-5 py-2">
-            <li className="capitalize">
+        <div className="navbar-top-navlink md:flex justify-around items-center gap-2 container mx-auto">
+          <nav className="navbar-top-nav-link hidden md:flex list-none items-center gap-5 py-2 text-sm xl:text-md">
+            <li className="capitalize ">
               <Link>About us</Link>
             </li>
             <li className="capitalize">
@@ -78,7 +78,7 @@ const Navbar = () => {
       </div>
       {/* navbar middle section start */}
       <div className="navbar-mid hidden lg:block  lg:bg-gray-800 lg:text-gray-50">
-        <div className=" container mx-auto flex justify-between items-center py-3">
+        <div className=" w-11/12 mx-auto flex justify-between items-center py-3">
           <div className="navbar-mid-left flex items-center gap-12">
             <div className="catagories flex items-center gap-2 text-xl capitalize ">
               <AiOutlineAlignRight />
@@ -134,7 +134,7 @@ const Navbar = () => {
       </div>
       {/* navbar  */}
       <div className="navbar-bottom hidden lg:block">
-        <nav className="nav-link container mx-auto list-none flex justify-between items-center py-4">
+        <nav className="nav-link w-11/12 mx-auto list-none flex justify-between items-center py-4">
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
             <NavLink end to="/women">
               women

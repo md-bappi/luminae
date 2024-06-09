@@ -38,7 +38,7 @@ const data = [
 
 const TopProducts = () => {
   return (
-    <div className="top flex flex-col ">
+    <div className="top flex flex-col py-5">
       <div className="trending-title w-11/12 mx-auto flex justify-between my-5">
         <h2 className="text-xl font-semibold p-2 md:text-2xl lg:text-3xl">
           Top 100
