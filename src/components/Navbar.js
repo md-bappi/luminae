@@ -27,7 +27,9 @@ const Navbar = () => {
                 alt="logo"
                 className=" w-6 md:w-10"
               />
-              <h2 className="md:text-3xl font-medium">Luminae</h2>
+              <Link to="/" className="md:text-3xl font-medium">
+                Luminae
+              </Link>
             </div>
 
             <span className="md:hidden">
@@ -35,15 +37,32 @@ const Navbar = () => {
             </span>
           </div>
 
-          <form className="nav-search flex justify-between items-center gap-1  py-1 border rounded pl-2  md:w-10/12 md:mx-2">
+          <form className="nav-search  flex justify-between items-center gap-1  py-1 border rounded pl-2  md:w-10/12 md:mx-2">
             <input
               type="text"
               placeholder="Search Products"
-              className="  outline-none "
+              className="  outline-none w-28 md:w-36"
             />
-            <span className=" w-10 flex justify-center items-center text-xl">
-              <CiSearch />
-            </span>
+
+            <div className="flex items-center">
+              <select className="navbar-top-category w-28 outline-none md:w-32">
+                <option value="">All categories</option>
+                <option value="women">Women</option>
+                <option value="man">Man</option>
+                <option value="mother-child">Mother Child</option>
+                <option value="furniture">Furniture</option>
+                <option value="super-market">Super Market</option>
+                <option value="cosmetics">Cosmetics</option>
+                <option value="shoe-&-bag">Shoe & Bag</option>
+                <option value="electronic">Electronic</option>
+                <option value="sport-&-outdoor">Sport & Outdoor</option>
+                <option value="best-seller">Best Seller</option>
+              </select>
+
+              <span className=" w-10 flex justify-center items-center text-xl">
+                <CiSearch />
+              </span>
+            </div>
           </form>
         </div>
 
@@ -141,13 +160,13 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>male</NavLink>
+            <NavLink to="/male">male</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
             <NavLink>mother-child</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>home & furniture</NavLink>
+            <NavLink>furniture</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
             <NavLink>super market</NavLink>

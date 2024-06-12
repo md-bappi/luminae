@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="footer flex flex-col py-2 relative">
+    <div className="footer flex flex-col py-2">
       <div className="footer-categorys w-11/12 mx-auto bg-blue-100 grid grid-cols-2 gap-x-2 gap-y-4 p-5  lg:grid-cols-4 lg:gap-x-4 lg:py-10 lg:mt-16 lg:pt-28 xl:gap-x-8">
         <div className="footer-category flex flex-col gap-3">
           <h2 className=" font-semibold">Company</h2>
@@ -87,22 +87,6 @@ const Footer = () => {
             </span>
           </div>
         </div>
-      </div>
-
-      <div className="footer-register hidden  lg:block bg-cyan-700  w-[45vw] mx-auto text-center py-5 xl:py-6 absolute top-0 left-1/2 -translate-x-1/2">
-        <h2 className="footer-register-title text-2xl font-semibold capitalize text-gray-50 xl:text-3xl">
-          luminae <span className=" text-gray-300">store</span>
-        </h2>
-        <p className="pt-2 pb-5 text-gray-50 xl:text-lg">
-          Register your email not to miss the last minutes off+ Free delivery
-        </p>
-        <form>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="py-1 px-3 outline-none w-1/2"
-          />
-        </form>
       </div>
     </div>
   );

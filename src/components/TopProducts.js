@@ -38,7 +38,7 @@ const data = [
 
 const TopProducts = () => {
   return (
-    <div className="top flex flex-col py-5">
+    <div className="top flex flex-col py-5 relative">
       <div className="trending-title w-11/12 mx-auto flex justify-between my-5">
         <h2 className="text-xl font-semibold p-2 md:text-2xl lg:text-3xl">
           Top 100
@@ -55,6 +55,22 @@ const TopProducts = () => {
         {data.map((product) => (
           <TopProductsItem key={product.id} product={product} />
         ))}
+      </div>
+
+      <div className="register hidden  lg:block bg-cyan-700  w-[45vw] mx-auto text-center py-5 xl:py-6 absolute -bottom-40 left-1/2 -translate-x-1/2">
+        <h2 className="footer-register-title text-2xl font-semibold capitalize text-gray-50 xl:text-3xl">
+          luminae <span className=" text-gray-300">store</span>
+        </h2>
+        <p className="pt-2 pb-5 text-gray-50 xl:text-lg">
+          Register your email not to miss the last minutes off+ Free delivery
+        </p>
+        <form>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="py-1 px-3 outline-none w-1/2"
+          />
+        </form>
       </div>
     </div>
   );
