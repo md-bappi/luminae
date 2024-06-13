@@ -75,7 +75,7 @@ const ProductFilterDetails = ({ data, category, items }) => {
 
   return (
     <div className="product-filter-details w-11/12 mx-auto flex flex-col gap-8 ">
-      <div>
+      <div className=" flex flex-col">
         <h2 className="inner-pages hidden md:flex items-center text-lg pt-4 pb-3 ">
           Homepage
           <span>

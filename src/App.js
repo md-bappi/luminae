@@ -7,6 +7,8 @@ import Footer from "./pages/Footer";
 import Women from "./components/Women";
 import Male from "./components/Male";
 import ProductDetails from "./components/ProductDetails";
+import Reviews from "./components/Reviews";
+import ShippingPayment from "./components/ShippingPayment";
 
 const App = () => {
   return (
@@ -18,6 +20,11 @@ const App = () => {
           <Route path="/women" element={<Women />} />
           <Route path="/male" element={<Male />} />
           <Route path="/product-details" element={<ProductDetails />} />
+          <Route path="/product-details/reviews" element={<Reviews />} />
+          <Route
+            path="/product-details/shipping-payment"
+            element={<ShippingPayment />}
+          />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
