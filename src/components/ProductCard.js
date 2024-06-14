@@ -41,7 +41,7 @@ const ProductCard = ({ product }) => {
           <span className=" text-rose-400">10%</span>
         </div>
         <Link
-          to="/product-details"
+          to="/single-product-details"
           className=" capitalize bg-sky-500 w-32 mt-2  py-2 px-5 rounded text-white text-lg font-semibold "
         >
           shop now

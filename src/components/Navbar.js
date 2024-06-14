@@ -72,7 +72,7 @@ const Navbar = () => {
               <Link>About us</Link>
             </li>
             <li className="capitalize">
-              <Link>Blog</Link>
+              <Link to="/blog">Blog</Link>
             </li>
             <li className="capitalize">
               <Link>Contact us</Link>
@@ -163,28 +163,28 @@ const Navbar = () => {
             <NavLink to="/male">male</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>mother-child</NavLink>
+            <NavLink to="/mother-child">mother-child</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>furniture</NavLink>
+            <NavLink to="/furniture">furniture</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>super market</NavLink>
+            <NavLink to="/super-market">super market</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>cosmetics</NavLink>
+            <NavLink to="/cosmetics">cosmetics</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>shoe & bag</NavLink>
+            <NavLink to="/shoe-bag">shoe & bag</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>electronic</NavLink>
+            <NavLink to="electronic">electronic</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>sport & outdoor</NavLink>
+            <NavLink to="/sport-outdoor">sport & outdoor</NavLink>
           </li>
           <li className=" capitalize text-gray-600 cursor-pointer duration-300">
-            <NavLink>best seller</NavLink>
+            <NavLink to="/best-seller">best seller</NavLink>
           </li>
         </nav>
       </div>

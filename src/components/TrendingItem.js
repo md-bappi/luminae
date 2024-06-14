@@ -20,7 +20,7 @@ const TrendingItem = ({ product }) => {
             {product.description}
           </p>
         </div>
-        <Link className=" border p-2 ">
+        <Link to="/single-product-details/card" className=" border p-2 ">
           <span>${product.price}</span> Shop Now
         </Link>
       </div>

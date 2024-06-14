@@ -57,12 +57,16 @@ const data = [
   },
 ];
 
-const Male = () => {
+const MotherChild = () => {
   return (
-    <div className="male">
-      <ProductFilterDetails data={data} items={data.length} category="Male" />
+    <div className="mother-child">
+      <ProductFilterDetails
+        data={data}
+        category="Mother Child"
+        items={data.length}
+      />
     </div>
   );
 };
 
-export default Male;
+export default MotherChild;

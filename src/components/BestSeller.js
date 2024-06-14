@@ -57,12 +57,16 @@ const data = [
   },
 ];
 
-const Male = () => {
+const BestSeller = () => {
   return (
-    <div className="male">
-      <ProductFilterDetails data={data} items={data.length} category="Male" />
+    <div className="best-seller">
+      <ProductFilterDetails
+        data={data}
+        category="Best Seller"
+        items={data.length}
+      />
     </div>
   );
 };
 
-export default Male;
+export default BestSeller;
